@@ -1,0 +1,102 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us" description="Get in touch with Sinewy Electrical Solutions">
+  <div class="container">
+    <h1 style="color: var(--primary-color); margin-bottom: 2rem; font-size: 2.5rem;">Contact Us</h1>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem;">
+      <div>
+        <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Get in Touch</h2>
+        
+        <div style="margin-bottom: 2rem;">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Phone</h3>
+          <p><a href="tel:+1234567890" style="color: var(--secondary-color); text-decoration: none;">+1 (234) 567-890</a></p>
+          <p style="font-size: 0.9rem; color: #666;">Available 24/7 for emergencies</p>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Email</h3>
+          <p><a href="mailto:info@sinewyelec.com" style="color: var(--secondary-color); text-decoration: none;">info@sinewyelec.com</a></p>
+          <p style="font-size: 0.9rem; color: #666;">We respond within 24 hours</p>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Office Location</h3>
+          <p>123 Electrical Avenue</p>
+          <p>Suite 500</p>
+          <p>Your City, State 12345</p>
+          <p style="font-size: 0.9rem; color: #666;">Open: Mon-Fri 8:00 AM - 6:00 PM</p>
+        </div>
+
+        <div>
+          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Follow Us</h3>
+          <p>
+            <a href="#" style="color: var(--secondary-color); text-decoration: none; margin-right: 1rem;">Facebook</a>
+            <a href="#" style="color: var(--secondary-color); text-decoration: none; margin-right: 1rem;">LinkedIn</a>
+            <a href="#" style="color: var(--secondary-color); text-decoration: none;">Twitter</a>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Contact Form</h2>
+        <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div>
+            <label for="name" style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Name</label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;">
+          </div>
+
+          <div>
+            <label for="email" style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Email</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;">
+          </div>
+
+          <div>
+            <label for="phone" style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Phone</label>
+            <input type="tel" id="phone" name="phone" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;">
+          </div>
+
+          <div>
+            <label for="service" style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Service Type</label>
+            <select id="service" name="service" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;">
+              <option value="">Select a service</option>
+              <option value="installation">Installation</option>
+              <option value="maintenance">Maintenance</option>
+              <option value="emergency">Emergency Service</option>
+              <option value="consultation">Consultation</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Message</label>
+            <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;"></textarea>
+          </div>
+
+          <button type="submit" class="cta-button" style="align-self: flex-start;">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <section style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px;">
+      <h2 style="color: var(--primary-color); margin-bottom: 2rem; text-align: center;">Service Areas</h2>
+      <p style="text-align: center; color: #666; margin-bottom: 2rem;">We proudly serve the entire metropolitan area and surrounding regions. Contact us to find out if we service your area.</p>
+      <div class="grid">
+        <div style="padding: 1rem; text-align: center;">
+          <p style="color: var(--primary-color); font-weight: 600;">Downtown Zone</p>
+        </div>
+        <div style="padding: 1rem; text-align: center;">
+          <p style="color: var(--primary-color); font-weight: 600;">North Valley</p>
+        </div>
+        <div style="padding: 1rem; text-align: center;">
+          <p style="color: var(--primary-color); font-weight: 600;">South District</p>
+        </div>
+        <div style="padding: 1rem; text-align: center;">
+          <p style="color: var(--primary-color); font-weight: 600;">East County</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
