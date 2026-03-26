@@ -146,23 +146,23 @@ import Layout from '../layouts/Layout.astro';
     <section style="margin-top: 4rem; margin-bottom: 4rem;">
       <h2 class="section-title">WHY CHOOSE OUR SERVICES</h2>
 
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-        <div style="text-align: center; padding: 2rem; background: var(--light-gray); border-radius: 8px;">
-          <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--secondary-orange);">✓</div>
-          <h3 style="color: var(--primary-dark); margin-bottom: 0.75rem; font-weight: 700;">Licensed & Insured</h3>
-          <p style="color: var(--text-light);">All work performed by fully licensed professionals with comprehensive insurance coverage.</p>
+      <div class="services-why-grid">
+        <div class="services-why-card">
+          <div class="services-why-icon">✓</div>
+          <h3>Licensed & Insured</h3>
+          <p>All work performed by fully licensed professionals with comprehensive insurance coverage.</p>
         </div>
 
-        <div style="text-align: center; padding: 2rem; background: var(--light-gray); border-radius: 8px;">
-          <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--secondary-orange);">🛡️</div>
-          <h3 style="color: var(--primary-dark); margin-bottom: 0.75rem; font-weight: 700;">Safety First</h3>
-          <p style="color: var(--text-light);">Strict adherence to all safety standards and regulations with comprehensive safety protocols.</p>
+        <div class="services-why-card">
+          <div class="services-why-icon">🛡️</div>
+          <h3>Safety First</h3>
+          <p>Strict adherence to all safety standards and regulations with comprehensive safety protocols.</p>
         </div>
 
-        <div style="text-align: center; padding: 2rem; background: var(--light-gray); border-radius: 8px;">
-          <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--secondary-orange);">⏱️</div>
-          <h3 style="color: var(--primary-dark); margin-bottom: 0.75rem; font-weight: 700;">Timely Delivery</h3>
-          <p style="color: var(--text-light);">Efficient project management ensuring on-schedule completion without compromising quality.</p>
+        <div class="services-why-card">
+          <div class="services-why-icon">⏱️</div>
+          <h3>Timely Delivery</h3>
+          <p>Efficient project management ensuring on-schedule completion without compromising quality.</p>
         </div>
       </div>
     </section>
@@ -507,11 +507,49 @@ import Layout from '../layouts/Layout.astro';
       max-width: 100%;
     }
 
+    .services-page .services-why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2rem;
+    }
+
+    .services-page .services-why-card {
+      text-align: center;
+      padding: 2rem;
+      background: var(--light-gray);
+      border-radius: 8px;
+    }
+
+    .services-page .services-why-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--secondary-orange);
+    }
+
+    .services-page .services-why-card h3 {
+      color: var(--primary-dark);
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+
+    .services-page .services-why-card p {
+      color: var(--text-light);
+    }
+
     @media (max-width: 900px) {
       .services-page .service-strip-card,
       .services-page .service-strip-card:nth-child(even) {
         grid-template-columns: 1fr;
         padding: 1rem;
+      }
+
+      .services-page .service-strip-card:first-child,
+      .services-page .service-strip-card:nth-child(2),
+      .services-page .service-strip-card:nth-child(3),
+      .services-page .service-strip-card:nth-child(4),
+      .services-page .service-strip-card:nth-child(5),
+      .services-page .service-strip-card:nth-child(6) {
+        grid-template-columns: 1fr;
       }
 
       .services-page .service-strip-card::before {
@@ -528,13 +566,32 @@ import Layout from '../layouts/Layout.astro';
         order: initial;
       }
 
-      .services-page .service-strip-media,
-      .services-page .service-strip-card:nth-child(even) .service-strip-media {
+      .services-page .service-strip-list .service-strip-card .service-strip-content {
+        padding: 0;
+      }
+
+      .services-page .service-strip-list .service-strip-card .service-strip-media {
         width: 100%;
-        height: 120px;
+        height: 190px;
+        min-height: 0;
+        align-self: auto;
+        padding: 0;
         clip-path: none;
         border-radius: 8px;
         justify-self: stretch;
+      }
+
+      .services-page .service-strip-list .service-strip-card .service-strip-image {
+        clip-path: none;
+      }
+
+      .services-page .services-why-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .services-page .services-why-card {
+        padding: 1.25rem;
       }
     }
 
