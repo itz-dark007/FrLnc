@@ -2,49 +2,120 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="About Us" description="Learn about Sinewy Electrical Solutions and our company profile">
+<Layout title="About Us - Sinewy Electrical Solutions" description="Learn about Sinewy Electrical Solutions and our company profile">
+  <section class="hero">
+    <div class="container">
+      <h1>ABOUT US</h1>
+      <p>DECADES OF EXPERTISE IN ELECTRICAL INFRASTRUCTURE</p>
+    </div>
+  </section>
+
   <div class="container">
-    <h1 style="color: var(--primary-color); margin-bottom: 2rem; font-size: 2.5rem;">About Sinewy Electrical Solutions</h1>
-    
-    <section style="margin-bottom: 3rem;">
-      <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Company Profile</h2>
-      <p style="font-size: 1.1rem; line-height: 1.8; color: #666;">
-        Sinewy Electrical Solutions is a leading provider of comprehensive electrical services serving residential, commercial, and industrial sectors. With over a decade of experience, we've built our reputation on reliability, expertise, and customer satisfaction.
-      </p>
+    <!-- Company Profile -->
+    <section>
+      <div class="about-profile">
+        <h2>COMPANY PROFILE</h2>
+        <ul class="services-reference-list">
+          <li>We are grateful to introduce ourselves that we are one of the Govt. Licensed Class-1 Electrical contractor & Engineers.</li>
+          <li>We under take all type of Electrical Projects on Turnkey basis, our scope starts from Designing, Planning, Supplying, Installing, Testing & commissioning.</li>
+          <li>Design, Fabrication, Supply and Erection of LT Distribution panels, MCC's, Control panels, Capacitor banks & APFC panels.</li>
+          <li>Supply and Erection of all type of cable trays, Bus ducts, Bus trunking system, Erection of Plant and Machineries, DG sets and their Laisoning work.</li>
+        </ul>
+        <p class="services-reference-quote">“TRUST IS LIKE ELECTRICITY. WE CAN’T SEE IT , BUT WE CAN SEE THE LIGHT...!!!”</p>
+      </div>
     </section>
 
-    <section style="margin-bottom: 3rem;">
-      <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Mission & Vision</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Our Mission</h3>
-          <p>To provide safe, reliable, and innovative electrical solutions that exceed client expectations while maintaining the highest standards of professionalism and integrity.</p>
+    <!-- Mission & Vision -->
+    <section style="margin-top: 4rem;">
+      <div class="mission-vision">
+        <div class="mission-box">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
+          <h3>MISSION</h3>
+          <ul>
+            <li>To continuously learn and implement the new technology for the betterment of organisation.</li>
+            <li>To provide the best possible electrical services with better quality and safety to achieve customer satisfaction.</li>
+            <li>To maintain good working environment and team work.</li>
+            <li>To achieve flexibility and adaptability to work in a team.</li>
+          </ul>
         </div>
-        <div class="card">
-          <h3>Our Vision</h3>
-          <p>To be the most trusted electrical solutions provider in the region, recognized for our commitment to quality, safety, and customer service excellence.</p>
+        <div class="vision-box">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">🔭</div>
+          <h3>VISION</h3>
+          <p>To be the best industry experts in providing Electrical Assistance and Services.</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2 style="color: var(--primary-color); margin-bottom: 2rem;">What Sets Us Apart</h2>
+    <!-- Core Values -->
+    <section style="margin-top: 4rem;">
+      <h2 class="section-title">OUR CORE VALUES</h2>
+      
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">✓</div>
+          <h3>EXCELLENCE</h3>
+          <ul>
+            <li>Highest Quality Standards</li>
+            <li>Technical Expertise</li>
+            <li>Continuous Improvement</li>
+          </ul>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">🛡️</div>
+          <h3>SAFETY</h3>
+          <ul>
+            <li>Rigorous Safety Protocols</li>
+            <li>Compliance Leadership</li>
+            <li>Risk Management</li>
+          </ul>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">🤝</div>
+          <h3>INTEGRITY</h3>
+          <ul>
+            <li>Transparent Communication</li>
+            <li>Professional Ethics</li>
+            <li>Customer Trust</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section style="margin-top: 4rem; margin-bottom: 4rem;">
+      <h2 class="section-title">WHY CHOOSE SINEWY ELECTRICAL SOLUTIONS</h2>
+      
       <div class="grid">
         <div class="card">
-          <h3>Expert Team</h3>
-          <p>Our electricians are highly trained, certified, and continuously updated with the latest industry standards and techniques.</p>
+          <h3>Class-1 Licensed Contractor</h3>
+          <p>Fully licensed and certified Class-1 electrical contractor with all required qualifications and regulatory approvals to execute large-scale infrastructure projects.</p>
         </div>
+        
         <div class="card">
-          <h3>Safety First</h3>
-          <p>We prioritize safety in every project, strictly adhering to all relevant codes, standards, and best practices.</p>
+          <h3>Decades of Experience</h3>
+          <p>Extensive track record successfully completing complex electrical infrastructure projects with zero safety incidents and exceptional quality standards.</p>
         </div>
+        
+        <div class="card">
+          <h3>Expert Team</h3>
+          <p>Highly skilled and certified team members with specialized expertise in substation installation, transmission & distribution, and industrial systems.</p>
+        </div>
+        
+        <div class="card">
+          <h3>Safety Excellence</h3>
+          <p>Unwavering commitment to safety with comprehensive protocols, continuous training, and rigorous compliance with all electrical standards and regulations.</p>
+        </div>
+        
+        <div class="card">
+          <h3>Advanced Technology</h3>
+          <p>Investment in modern equipment and technology to deliver efficient, reliable solutions that meet contemporary industry standards and client requirements.</p>
+        </div>
+        
         <div class="card">
           <h3>Customer Focus</h3>
-          <p>Your satisfaction is our priority. We provide transparent communication and personalized service for every project.</p>
-        </div>
-        <div class="card">
-          <h3>Innovation</h3>
-          <p>We stay ahead of industry trends and implement modern solutions for energy efficiency and sustainability.</p>
+          <p>Dedicated to understanding client needs and providing personalized solutions with transparent communication throughout the project lifecycle.</p>
         </div>
       </div>
     </section>

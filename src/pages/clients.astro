@@ -2,64 +2,88 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Clients & Testimonials" description="What our clients say about Sinewy Electrical Solutions">
-  <div class="container">
-    <h1 style="color: var(--primary-color); margin-bottom: 2rem; font-size: 2.5rem;">Clients & Testimonials</h1>
+<Layout title="Clients & Testimonials - Sinewy Electrical Solutions" description="What our clients say about Sinewy Electrical Solutions">
+  <section class="hero">
+    <div class="container">
+      <h1>CLIENTS & TESTIMONIALS</h1>
+      <p>TRUSTED BY LEADING COMPANIES AND ORGANIZATIONS</p>
+    </div>
+  </section>
 
+  <div class="container">
     <section style="margin-bottom: 4rem;">
-      <h2 style="color: var(--primary-color); margin-bottom: 2rem; font-size: 1.8rem;">What Our Clients Say</h2>
+      <h2 class="section-title">OUR MAJOR CLIENTS</h2>
+
+      <div class="client-logo-grid major-clients-grid" style="margin-top: 2rem;">
+        <div class="client-logo-card"><img src="/clients/leela.png" alt="The Leela" class="client-logo-image" /></div>
+        <div class="client-logo-card"><img src="/clients/jockey.png" alt="Jockey" class="client-logo-image" /></div>
+        <div class="client-logo-card"><img src="/clients/lg.png" alt="LG" class="client-logo-image" /></div>
+        <div class="client-logo-card"><img src="/clients/manjushree-2-0.png" alt="Manjushree 2.0" class="client-logo-image" /></div>
+        <div class="client-logo-card"><img src="/clients/emmvee.png" alt="Emmvee" class="client-logo-image" /></div>
+        <div class="client-logo-card"><img src="/clients/cms.png" alt="CMS" class="client-logo-image" /></div>
+        <div class="client-logo-card"><img src="/clients/ag-corporation.png" alt="AG Corporation" class="client-logo-image" /></div>
+        <div class="client-logo-card dual-client-logo">
+          <img src="/clients/motherson.png" alt="Motherson" class="client-logo-image" />
+          <img src="/clients/marelli.png" alt="Marelli" class="client-logo-image" />
+        </div>
+        <div class="client-logo-card"><img src="/clients/sbc.png" alt="SBC" class="client-logo-image" /></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">WHAT OUR CLIENTS SAY</h2>
       
       <div class="grid">
-        <div class="card" style="border-left: 4px solid var(--secondary-color);">
-          <p style="font-style: italic; color: #666; margin-bottom: 1rem;">"Sinewy Electrical Solutions delivered our project on time and under budget. Their professionalism and attention to detail were exceptional."</p>
-          <p style="font-weight: 600; color: var(--primary-color);">- John Mitchell, Property Developer</p>
+        <div class="testimonial">
+          <p>"Sinewy Electrical Solutions delivered our substation project on time and under budget. Their professionalism and expertise were exceptional."</p>
+          <p class="testimonial-author">- Client Representative, Industrial Sector</p>
         </div>
 
-        <div class="card" style="border-left: 4px solid var(--secondary-color);">
-          <p style="font-style: italic; color: #666; margin-bottom: 1rem;">"We've been using their services for 5 years. The team is reliable, knowledgeable, and always responsive to our needs."</p>
-          <p style="font-weight: 600; color: var(--primary-color);">- Sarah Johnson, Manufacturing Manager</p>
+        <div class="testimonial">
+          <p>"We've been using their services for multiple projects. The team is reliable, knowledgeable, and responsive to our requirements."</p>
+          <p class="testimonial-author">- Project Manager, Manufacturing Company</p>
         </div>
 
-        <div class="card" style="border-left: 4px solid var(--secondary-color);">
-          <p style="font-style: italic; color: #666; margin-bottom: 1rem;">"Emergency electrical issue resolved within hours. Professional and cost-effective. Highly recommended!"</p>
-          <p style="font-weight: 600; color: var(--primary-color);">- Michael Chen, Business Owner</p>
+        <div class="testimonial">
+          <p>"Emergency electrical issue resolved efficiently. Professional, cost-effective, and highly recommended for critical infrastructure projects."</p>
+          <p class="testimonial-author">- Facility Head, Industrial Complex</p>
         </div>
 
-        <div class="card" style="border-left: 4px solid var(--secondary-color);">
-          <p style="font-style: italic; color: #666; margin-bottom: 1rem;">"Their energy efficiency audit saved us thousands annually. Great service and excellent ROI."</p>
-          <p style="font-weight: 600; color: var(--primary-color);">- Emma Rodriguez, Facility Director</p>
+        <div class="testimonial">
+          <p>"Their technical expertise in T&D systems was invaluable. Outstanding project execution with zero safety incidents."</p>
+          <p class="testimonial-author">- Infrastructure Director, Engineering Firm</p>
         </div>
 
-        <div class="card" style="border-left: 4px solid var(--secondary-color);">
-          <p style="font-style: italic; color: #666; margin-bottom: 1rem;">"Installation was seamless and they ensured zero downtime. Their team is truly professional."</p>
-          <p style="font-weight: 600; color: var(--primary-color);">- David Thompson, Hospital Administrator</p>
+        <div class="testimonial">
+          <p>"Installation was seamless with minimal downtime. Their team's precision and professionalism are truly world-class."</p>
+          <p class="testimonial-author">- Operations Manager, Critical Facility</p>
         </div>
 
-        <div class="card" style="border-left: 4px solid var(--secondary-color);">
-          <p style="font-style: italic; color: #666; margin-bottom: 1rem;">"Outstanding customer service and top-quality work. They understood our requirements perfectly."</p>
-          <p style="font-weight: 600; color: var(--primary-color);">- Lisa Wong, Retail Manager</p>
+        <div class="testimonial">
+          <p>"Outstanding technical knowledge and customer service. They understood our complex requirements and delivered beyond expectations."</p>
+          <p class="testimonial-author">- Chief Engineer, Infrastructure Development</p>
         </div>
       </div>
     </section>
 
-    <section style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px; margin-bottom: 4rem;">
-      <h2 style="color: var(--primary-color); margin-bottom: 2rem; text-align: center;">Client Statistics</h2>
-      <div class="grid">
+    <section style="background: var(--light-gray); padding: 3rem; border-radius: 8px; border-left: 4px solid var(--secondary-orange);">
+      <h2 class="section-title">CLIENT STATISTICS</h2>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 2rem;">
         <div style="text-align: center;">
-          <h3 style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 0.5rem;">500+</h3>
-          <p style="color: var(--primary-color); font-weight: 600;">Satisfied Clients</p>
+          <h3 style="font-size: 2.5rem; color: var(--secondary-orange); margin-bottom: 0.5rem;">100+</h3>
+          <p style="color: var(--primary-dark); font-weight: 600;">Successful Projects</p>
         </div>
         <div style="text-align: center;">
-          <h3 style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 0.5rem;">1000+</h3>
-          <p style="color: var(--primary-color); font-weight: 600;">Completed Projects</p>
+          <h3 style="font-size: 2.5rem; color: var(--secondary-orange); margin-bottom: 0.5rem;">1000+</h3>
+          <p style="color: var(--primary-dark); font-weight: 600;">Completed Projects</p>
         </div>
         <div style="text-align: center;">
-          <h3 style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 0.5rem;">15+</h3>
-          <p style="color: var(--primary-color); font-weight: 600;">Years Experience</p>
+          <h3 style="font-size: 2.5rem; color: var(--secondary-orange); margin-bottom: 0.5rem;">15+</h3>
+          <p style="color: var(--primary-dark); font-weight: 600;">Years Experience</p>
         </div>
         <div style="text-align: center;">
-          <h3 style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 0.5rem;">99%</h3>
-          <p style="color: var(--primary-color); font-weight: 600;">Satisfaction Rate</p>
+          <h3 style="font-size: 2.5rem; color: var(--secondary-orange); margin-bottom: 0.5rem;">99%</h3>
+          <p style="color: var(--primary-dark); font-weight: 600;">Satisfaction Rate</p>
         </div>
       </div>
     </section>

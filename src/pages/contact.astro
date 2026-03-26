@@ -2,100 +2,128 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Contact Us" description="Get in touch with Sinewy Electrical Solutions">
-  <div class="container">
-    <h1 style="color: var(--primary-color); margin-bottom: 2rem; font-size: 2.5rem;">Contact Us</h1>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem;">
-      <div>
-        <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Get in Touch</h2>
-        
-        <div style="margin-bottom: 2rem;">
-          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Phone</h3>
-          <p><a href="tel:+1234567890" style="color: var(--secondary-color); text-decoration: none;">+1 (234) 567-890</a></p>
-          <p style="font-size: 0.9rem; color: #666;">Available 24/7 for emergencies</p>
-        </div>
-
-        <div style="margin-bottom: 2rem;">
-          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Email</h3>
-          <p><a href="mailto:info@sinewyelec.com" style="color: var(--secondary-color); text-decoration: none;">info@sinewyelec.com</a></p>
-          <p style="font-size: 0.9rem; color: #666;">We respond within 24 hours</p>
-        </div>
-
-        <div style="margin-bottom: 2rem;">
-          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Office Location</h3>
-          <p>123 Electrical Avenue</p>
-          <p>Suite 500</p>
-          <p>Your City, State 12345</p>
-          <p style="font-size: 0.9rem; color: #666;">Open: Mon-Fri 8:00 AM - 6:00 PM</p>
-        </div>
-
-        <div>
-          <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Follow Us</h3>
-          <p>
-            <a href="#" style="color: var(--secondary-color); text-decoration: none; margin-right: 1rem;">Facebook</a>
-            <a href="#" style="color: var(--secondary-color); text-decoration: none; margin-right: 1rem;">LinkedIn</a>
-            <a href="#" style="color: var(--secondary-color); text-decoration: none;">Twitter</a>
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Contact Form</h2>
-        <form style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div>
-            <label for="name" style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Name</label>
-            <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;">
-          </div>
-
-          <div>
-            <label for="email" style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Email</label>
-            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;">
-          </div>
-
-          <div>
-            <label for="phone" style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Phone</label>
-            <input type="tel" id="phone" name="phone" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;">
-          </div>
-
-          <div>
-            <label for="service" style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Service Type</label>
-            <select id="service" name="service" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;">
-              <option value="">Select a service</option>
-              <option value="installation">Installation</option>
-              <option value="maintenance">Maintenance</option>
-              <option value="emergency">Emergency Service</option>
-              <option value="consultation">Consultation</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="message" style="display: block; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Message</label>
-            <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;"></textarea>
-          </div>
-
-          <button type="submit" class="cta-button" style="align-self: flex-start;">Send Message</button>
-        </form>
-      </div>
+<Layout title="Contact Us - Sinewy Electrical Solutions" description="Get in touch with Sinewy Electrical Solutions for your electrical project needs">
+  <section class="hero">
+    <div class="container">
+      <h1>CONTACT US</h1>
+      <p>LET'S DISCUSS YOUR ELECTRICAL NEEDS</p>
     </div>
+  </section>
 
-    <section style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px;">
-      <h2 style="color: var(--primary-color); margin-bottom: 2rem; text-align: center;">Service Areas</h2>
-      <p style="text-align: center; color: #666; margin-bottom: 2rem;">We proudly serve the entire metropolitan area and surrounding regions. Contact us to find out if we service your area.</p>
-      <div class="grid">
-        <div style="padding: 1rem; text-align: center;">
-          <p style="color: var(--primary-color); font-weight: 600;">Downtown Zone</p>
+  <div class="container">
+    <section>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 3rem 0;">
+        <!-- Contact Form -->
+        <div>
+          <h2 style="color: var(--primary-dark); margin-bottom: 2rem; font-size: 1.5rem; font-weight: 700; text-transform: uppercase;">SEND US A MESSAGE</h2>
+          
+          <form class="contact-form" style="margin: 0; background: transparent; box-shadow: none; padding: 0;">
+            <div class="form-group">
+              <label>Name *</label>
+              <input type="text" placeholder="Your Full Name" required />
+            </div>
+
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="Your Phone Number" />
+            </div>
+
+            <div class="form-group">
+              <label>Service Type *</label>
+              <select required>
+                <option value="">Select a service</option>
+                <option value="substation">Substation Installation</option>
+                <option value="transmission">Transmission & Distribution</option>
+                <option value="industrial">Industrial Electrification</option>
+                <option value="maintenance">Maintenance & Testing</option>
+                <option value="emergency">Emergency Services</option>
+                <option value="consultation">Consultation & Design</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea placeholder="Describe your project requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">SUBMIT REQUEST</button>
+          </form>
         </div>
-        <div style="padding: 1rem; text-align: center;">
-          <p style="color: var(--primary-color); font-weight: 600;">North Valley</p>
+
+        <!-- Contact Information -->
+        <div>
+          <h2 style="color: var(--primary-dark); margin-bottom: 2rem; font-size: 1.5rem; font-weight: 700; text-transform: uppercase;">CONTACT INFORMATION</h2>
+          
+          <div style="background: var(--light-gray); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+            <h3 style="color: var(--primary-dark); margin-bottom: 1.5rem; font-weight: 700;">📍 OFFICE LOCATION</h3>
+            <p style="color: var(--text-dark); margin-bottom: 0.5rem;"><strong>SINEWY ELECTRICAL SOLUTIONS</strong></p>
+            <p style="color: var(--text-light); margin-bottom: 1rem;">#98, 10th A Main<br>Hongasandra, Begur Road<br>Bangalore - 560 068<br>India</p>
+          </div>
+
+          <div style="background: var(--light-gray); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+            <h3 style="color: var(--primary-dark); margin-bottom: 1.5rem; font-weight: 700;">📞 PHONE</h3>
+            <p style="color: var(--text-light); margin-bottom: 0.5rem;"><strong>Main:</strong> <a href="tel:+918792629665" style="color: var(--secondary-orange); text-decoration: none;">87926 29665</a></p>
+            <p style="color: var(--text-light); margin-bottom: 0.5rem;"><strong>Alternate:</strong> <a href="tel:+919790634608" style="color: var(--secondary-orange); text-decoration: none;">99007 34608</a></p>
+            <p style="color: var(--text-light); font-size: 0.9rem;">Available 24/7 for emergencies</p>
+          </div>
+
+          <div style="background: var(--light-gray); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+            <h3 style="color: var(--primary-dark); margin-bottom: 1.5rem; font-weight: 700;">✉️ EMAIL</h3>
+            <p style="color: var(--text-light); margin-bottom: 0.5rem;"><a href="mailto:sinewyeletricalsolutions@gmail.com" style="color: var(--secondary-orange); text-decoration: none;">sinewyeletricalsolutions@gmail.com</a></p>
+            <p style="color: var(--text-light); font-size: 0.9rem;">We respond within 24 hours</p>
+          </div>
+
+          <div style="background: var(--light-gray); padding: 2rem; border-radius: 8px;">
+            <h3 style="color: var(--primary-dark); margin-bottom: 1.5rem; font-weight: 700;">⏰ BUSINESS HOURS</h3>
+            <p style="color: var(--text-light); margin-bottom: 0.5rem;"><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+            <p style="color: var(--text-light); margin-bottom: 0.5rem;"><strong>Saturday:</strong> 9:00 AM - 1:00 PM</p>
+            <p style="color: var(--text-light);"><strong>Sunday:</strong> Closed</p>
+            <p style="color: var(--secondary-orange); font-size: 0.9rem; margin-top: 1rem; font-weight: 600;">Emergency Services Available 24/7</p>
+          </div>
         </div>
-        <div style="padding: 1rem; text-align: center;">
-          <p style="color: var(--primary-color); font-weight: 600;">South District</p>
+      </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section style="margin-top: 4rem; margin-bottom: 4rem;">
+      <h2 class="section-title">SERVICE AREAS</h2>
+      <p class="subtitle">We proudly serve Bangalore and surrounding regions with professional electrical infrastructure solutions.</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem;">
+        <div style="padding: 2rem; background: var(--light-gray); border-radius: 8px; text-align: center; border-left: 4px solid var(--secondary-orange);">
+          <h3 style="color: var(--primary-dark); margin-bottom: 0.75rem; font-weight: 700;">BANGALORE</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem;">Central business district and surrounding areas</p>
         </div>
-        <div style="padding: 1rem; text-align: center;">
-          <p style="color: var(--primary-color); font-weight: 600;">East County</p>
+        
+        <div style="padding: 2rem; background: var(--light-gray); border-radius: 8px; text-align: center; border-left: 4px solid var(--secondary-orange);">
+          <h3 style="color: var(--primary-dark); margin-bottom: 0.75rem; font-weight: 700;">NORTHERN OUTSKIRTS</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem;">Extended metropolitan region</p>
         </div>
+        
+        <div style="padding: 2rem; background: var(--light-gray); border-radius: 8px; text-align: center; border-left: 4px solid var(--secondary-orange);">
+          <h3 style="color: var(--primary-dark); margin-bottom: 0.75rem; font-weight: 700;">SOUTHERN ZONE</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem;">Industrial and infrastructure areas</p>
+        </div>
+        
+        <div style="padding: 2rem; background: var(--light-gray); border-radius: 8px; text-align: center; border-left: 4px solid var(--secondary-orange);">
+          <h3 style="color: var(--primary-dark); margin-bottom: 0.75rem; font-weight: 700;">REGIONAL PROJECTS</h3>
+          <p style="color: var(--text-light); font-size: 0.9rem;">Select projects beyond Bangalore</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ or Additional Info -->
+    <section style="margin-bottom: 4rem;">
+      <div style="padding: 3rem; background: var(--light-gray); border-radius: 8px; border-left: 4px solid var(--secondary-orange);">
+        <h2 style="color: var(--primary-dark); margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700; text-transform: uppercase;">EMERGENCY ASSISTANCE</h2>
+        <p style="color: var(--text-dark); margin-bottom: 1.5rem; font-size: 1.05rem;">For urgent electrical issues and emergencies, our team is available 24/7. Simply call our emergency hotline and we'll dispatch our experts immediately.</p>
+        <a href="tel:+918792629665" class="cta-button">CALL EMERGENCY HOTLINE</a>
       </div>
     </section>
   </div>

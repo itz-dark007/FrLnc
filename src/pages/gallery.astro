@@ -2,66 +2,105 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Gallery" description="Visual showcase of our electrical projects and services">
-  <div class="container">
-    <h1 style="color: var(--primary-color); margin-bottom: 2rem; font-size: 2.5rem;">Project Gallery</h1>
-
-    <p class="section-subtitle">Visual documentation of our completed projects and installations across various sectors and scales.</p>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
-      <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px; text-align: center; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Industrial Panel Installation</h3>
-        <p style="color: #666;">[Image Placeholder]</p>
-        <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">Custom electrical panel installation for manufacturing facility</p>
-      </div>
-
-      <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px; text-align: center; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Commercial Wiring</h3>
-        <p style="color: #666;">[Image Placeholder]</p>
-        <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">Complete electrical wiring system for commercial office</p>
-      </div>
-
-      <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px; text-align: center; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Smart Home Integration</h3>
-        <p style="color: #666;">[Image Placeholder]</p>
-        <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">Modern smart home electrical systems installation</p>
-      </div>
-
-      <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px; text-align: center; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Emergency Backup System</h3>
-        <p style="color: #666;">[Image Placeholder]</p>
-        <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">Generator and backup power installation</p>
-      </div>
-
-      <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px; text-align: center; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Lighting Upgrades</h3>
-        <p style="color: #666;">[Image Placeholder]</p>
-        <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">LED lighting upgrade for retail space</p>
-      </div>
-
-      <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px; text-align: center; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Safety Systems</h3>
-        <p style="color: #666;">[Image Placeholder]</p>
-        <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">Fire alarm and safety system installation</p>
-      </div>
-
-      <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px; text-align: center; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Renewable Energy</h3>
-        <p style="color: #666;">[Image Placeholder]</p>
-        <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">Solar panel electrical system integration</p>
-      </div>
-
-      <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px; text-align: center; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Network Infrastructure</h3>
-        <p style="color: #666;">[Image Placeholder]</p>
-        <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">Data center power distribution system</p>
-      </div>
+<Layout title="Gallery - Sinewy Electrical Solutions" description="Visual showcase of our electrical infrastructure projects">
+  <section class="hero">
+    <div class="container">
+      <h1>PROJECT GALLERY</h1>
+      <p>VISUAL DOCUMENTATION OF OUR COMPLETED PROJECTS</p>
     </div>
+  </section>
 
-    <section style="background-color: var(--light-bg); padding: 2rem; border-radius: 8px; margin-top: 4rem; text-align: center;">
-      <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Ready to See Your Project Come to Life?</h2>
-      <p style="color: #666; margin-bottom: 1.5rem;">Contact us for a consultation and let's discuss your electrical project needs.</p>
-      <a href="/contact" class="cta-button">Get Started</a>
+  <div class="container">
+    <section>
+      <h2 class="section-title">OUR PROJECT PORTFOLIO</h2>
+      <p class="subtitle">Explore our collection of successfully completed electrical infrastructure projects across various sectors.</p>
+
+      <div class="gallery-grid" style="margin-top: 3rem;">
+        <div class="gallery-item" style="background: linear-gradient(135deg, #c85a17 0%, #1a3a52 100%); display: flex; align-items: center; justify-content: center;">
+          <div style="color: white; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏢</div>
+            <p style="font-weight: 600;">SUBSTATION</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" style="background: linear-gradient(135deg, #1a3a52 0%, #c85a17 100%); display: flex; align-items: center; justify-content: center;">
+          <div style="color: white; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;">⚡</div>
+            <p style="font-weight: 600;">TRANSMISSION</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" style="background: linear-gradient(135deg, #c85a17 0%, #1a3a52 100%); display: flex; align-items: center; justify-content: center;">
+          <div style="color: white; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🔌</div>
+            <p style="font-weight: 600;">DISTRIBUTION</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" style="background: linear-gradient(135deg, #1a3a52 0%, #c85a17 100%); display: flex; align-items: center; justify-content: center;">
+          <div style="color: white; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏭</div>
+            <p style="font-weight: 600;">INDUSTRIAL</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" style="background: linear-gradient(135deg, #c85a17 0%, #1a3a52 100%); display: flex; align-items: center; justify-content: center;">
+          <div style="color: white; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🔧</div>
+            <p style="font-weight: 600;">MAINTENANCE</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" style="background: linear-gradient(135deg, #1a3a52 0%, #c85a17 100%); display: flex; align-items: center; justify-content: center;">
+          <div style="color: white; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;">⚙️</div>
+            <p style="font-weight: 600;">TESTING</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" style="background: linear-gradient(135deg, #c85a17 0%, #1a3a52 100%); display: flex; align-items: center; justify-content: center;">
+          <div style="color: white; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🛡️</div>
+            <p style="font-weight: 600;">SAFETY</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" style="background: linear-gradient(135deg, #1a3a52 0%, #c85a17 100%); display: flex; align-items: center; justify-content: center;">
+          <div style="color: white; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;">✓</div>
+            <p style="font-weight: 600;">COMPLIANCE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 4rem;">
+      <h2 class="section-title">PROJECT HIGHLIGHTS</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+        <div style="padding: 2rem; background: var(--light-gray); border-radius: 8px; border-left: 4px solid var(--secondary-orange);">
+          <h3 style="color: var(--primary-dark); margin-bottom: 1rem; font-weight: 700;">🏆 AWARDS & RECOGNITION</h3>
+          <p style="color: var(--text-light); margin-bottom: 0.75rem;">✓ Industry Excellence</p>
+          <p style="color: var(--text-light); margin-bottom: 0.75rem;">✓ Safety Leadership</p>
+          <p style="color: var(--text-light);">✓ Client Satisfaction</p>
+        </div>
+        
+        <div style="padding: 2rem; background: var(--light-gray); border-radius: 8px; border-left: 4px solid var(--secondary-orange);">
+          <h3 style="color: var(--primary-dark); margin-bottom: 1rem; font-weight: 700;">📊 PROJECT STATISTICS</h3>
+          <p style="color: var(--text-light); margin-bottom: 0.75rem;">✓ 100+ Successful Projects</p>
+          <p style="color: var(--text-light); margin-bottom: 0.75rem;">✓ Zero Safety Incidents</p>
+          <p style="color: var(--text-light);">✓ 99.9% On-Time Delivery</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 4rem; margin-bottom: 4rem;">
+      <div style="padding: 3rem; background: var(--light-gray); border-radius: 8px; border-left: 4px solid var(--secondary-orange); text-align: center;">
+        <h2 style="color: var(--primary-dark); margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700; text-transform: uppercase;">INTERESTED IN OUR SERVICES?</h2>
+        <p style="color: var(--text-dark); margin-bottom: 1.5rem; font-size: 1.05rem;">View our detailed project case studies and discuss your electrical infrastructure requirements with our team.</p>
+        <a href="/projects" class="cta-button" style="margin-right: 1rem;">VIEW PROJECTS</a>
+        <a href="/contact" class="cta-button" style="background: var(--primary-dark);">GET IN TOUCH</a>
+      </div>
     </section>
   </div>
 </Layout>

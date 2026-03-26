@@ -15,28 +15,49 @@ const { title, description = 'Sinewy Electrical Solutions - Professional Electri
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <title>{title} | Sinewy Electrical Solutions</title>
+    <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-brand">
-          <h1>Sinewy Electrical</h1>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-content">
+            <div class="contact-info">
+              <span>📍 BANGALORE LOCATION: #98, 10th A Main, Hongasandra, Begur Road, Bangalore - 560 068</span>
+              <span>📞 Ph:87926 29665 / 99007 34608</span>
+              <span>✉️ Email: sinewyeletricalsolutions@gmail.com</span>
+            </div>
+          </div>
         </div>
-        <ul class="nav-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/clients">Clients & Testimonials</a></li>
-          <li><a href="/suppliers">Suppliers</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/team">Team</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
       </div>
-    </nav>
+
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-brand">
+            <div class="logo-section">
+              <img src="/logo.png" alt="Sinewy Electrical Solutions Logo" class="logo-image">
+              <div class="brand-text">
+                <h1>SINEWY ELECTRICAL<br>SOLUTIONS</h1>
+                <p class="brand-tagline">POWERING TOMORROW</p>
+              </div>
+            </div>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/clients">Clients</a></li>
+            <li><a href="/suppliers">Suppliers</a></li>
+            <li><a href="/compliance">Legal Compliance</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/team">Team</a></li>
+          </ul>
+          <a href="/contact" class="cta-button">GET STARTED</a>
+        </div>
+      </nav>
+    </header>
 
     <main class="main-content">
       <slot />
@@ -46,19 +67,30 @@ const { title, description = 'Sinewy Electrical Solutions - Professional Electri
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
+            <h3>SINEWY ELECTRICAL SOLUTIONS</h3>
+            <p>Class-1 electrical contractor providing reliable power solutions for industrial & infrastructure projects.</p>
+            <div class="footer-contact">
+              <p><strong>Phone:</strong>87926 29665 / 99007 34608</p>
+              <p><strong>Email:</strong> sinewyeletricalsolutions@gmail.com</p>
+              <p><strong>Address:</strong> Bangalore, India</p>
+            </div>
+          </div>
+          <div class="footer-section">
             <h3>Quick Links</h3>
             <ul>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/projects">Projects</a></li>
               <li><a href="/contact">Contact Us</a></li>
-              <li><a href="/terms">Terms & Conditions</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
             </ul>
           </div>
           <div class="footer-section">
             <h3>Services</h3>
             <ul>
-              <li><a href="/services">Electrical Installation</a></li>
-              <li><a href="/services">Maintenance</a></li>
-              <li><a href="/services">Consultation</a></li>
+              <li><a href="/services">Substation Installation</a></li>
+              <li><a href="/services">Transmission & Distribution</a></li>
+              <li><a href="/services">Industrial Electrification</a></li>
+              <li><a href="/services">Maintenance & Testing</a></li>
             </ul>
           </div>
           <div class="footer-section">
@@ -71,9 +103,44 @@ const { title, description = 'Sinewy Electrical Solutions - Professional Electri
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 Sinewy Electrical Solutions. All rights reserved.</p>
+          <p>&copy; 2026 SINEWY ELECTRICAL SOLUTIONS. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
         </div>
       </div>
     </footer>
+
+    <script is:inline>
+      document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+
+        const link = target.closest('a[href]');
+        if (!link) return;
+
+        const href = link.getAttribute('href');
+        if (!href) return;
+
+        if (
+          href.startsWith('#') ||
+          href.startsWith('mailto:') ||
+          href.startsWith('tel:') ||
+          link.target === '_blank' ||
+          event.metaKey ||
+          event.ctrlKey ||
+          event.shiftKey ||
+          event.altKey
+        ) {
+          return;
+        }
+
+        const nextUrl = new URL(href, window.location.href);
+        if (nextUrl.origin !== window.location.origin) return;
+
+        document.body.classList.add('is-routing');
+      });
+
+      window.addEventListener('pageshow', () => {
+        document.body.classList.remove('is-routing');
+      });
+    </script>
   </body>
 </html>
